@@ -1,20 +1,20 @@
 body {
 
-    background: gray;
+    background-color: gray;
+    margin-left: 6cap;
+    margin-right: 6cap;
+    font-family: Arial, Helvetica, sans-serif;
 }
-.header { 
+
+
+.header {
 
     Display: flex;
     justify-content: center;
-    align-items: center;
-    
-}
-
-#introtext {
-
-
 
 }
+
+#introtext {}
 
 
 
@@ -22,16 +22,16 @@ body {
 
 #Kalenderblatt {
 
-    margin: 25px auto;
-    
+    margin: 30px auto;
+    background-color:
+
 }
 
 #Kalenderblatt table {
-    border-spacing: o;
+    border-spacing: 0px;
     border-collapse: collapse;
     border: 0px solid black;
     font-size: 2cap;
-    
 
 
 }
@@ -41,53 +41,67 @@ body {
     border-top: 2px solid black;
     background: rgb(117, 137, 138);
     border-left: 2px solid black;
+    border-right: 2px solid black;
 
-    
 }
 
 #Kalenderblatt table td {
 
-    
+
     background: slategrey;
     text-align: center;
-    padding: 0.25em;
+    padding: 0.6em;
     border-top: 2px solid black;
     border-left: 2px solid black;
     cursor: pointer;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
 
 }
 
-  #kalenderblatt td.heute {
+
+
+#kalenderblatt td.heute {
     background: green;
-  }
-  
+}
 
-#Kalenderblatt td.Sa {
- color: blue;
+#Kalenderblatt th.sa {
+    color: blue;
+}
+
+#Kalenderblatt td.sa {
+    color: blue;
 
 }
 
-#Kalenderblatt td.So {
-     color: red;
-   }
+#Kalenderblatt th.so {
+    color: red;
+}
+
+#Kalenderblatt td.so {
+    color: red;
+}
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#historie {
-
+td:nth-child(1) {
+    background-color: lightgray;
+    color: burlywood;
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#historie {}
