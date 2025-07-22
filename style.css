@@ -1,0 +1,93 @@
+body {
+
+    background: gray;
+}
+.header { 
+
+    Display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#introtext {
+
+
+
+}
+
+
+
+
+
+#Kalenderblatt {
+
+    margin: 25px auto;
+    
+}
+
+#Kalenderblatt table {
+    border-spacing: o;
+    border-collapse: collapse;
+    border: 0px solid black;
+    font-size: 2cap;
+    
+
+
+}
+
+#Kalenderblatt table th {
+
+    border-top: 2px solid black;
+    background: rgb(117, 137, 138);
+    border-left: 2px solid black;
+
+    
+}
+
+#Kalenderblatt table td {
+
+    
+    background: slategrey;
+    text-align: center;
+    padding: 0.25em;
+    border-top: 2px solid black;
+    border-left: 2px solid black;
+    cursor: pointer;
+
+}
+
+  #kalenderblatt td.heute {
+    background: green;
+  }
+  
+
+#Kalenderblatt td.Sa {
+ color: blue;
+
+}
+
+#Kalenderblatt td.So {
+     color: red;
+   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#historie {
+
+
+}
