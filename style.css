@@ -1,6 +1,6 @@
 body {
 
-    background-color: gray;
+    background-color: rgb(59, 59, 59);
     margin-left: 6cap;
     margin-right: 6cap;
     font-family: Arial, Helvetica, sans-serif;
@@ -8,12 +8,11 @@ body {
 
 
 .header {
-
     display: flex;
-    justify-content: center;
-
+    justify-self: center;
+    grid-area: header;
+    padding: 5px 0 30px 0;
 }
-
 
 .container {
     display: grid;
@@ -24,48 +23,35 @@ body {
     box-sizing: border-box;
     gap: 30px;
     padding: 30px;
-}
-
-
-.header {
-    grid-area: header;
-    padding: 5px 0 30px 0;
-}
-
-#kalenderblatt {
-    grid-area: kalender;
-}
-
-#text_box {
-    max-width: 60%;
-    grid-area: text_box;
+    background-color: rgb(65, 62, 62);
 }
 
 #Kalenderblatt table {
     border-spacing: 0px;
     border-collapse: collapse;
     border: 0px solid black;
-    font-size: 2cap;
+    font-size: 18px;
 
+}
+
+#Kalenderblatt td:hover {
+    background-color: rgb(65, 62, 62);
 }
 
 #Kalenderblatt table th {
 
     border-top: 2px solid black;
-    background: rgb(117, 137, 138);
     border-left: 2px solid black;
     border-right: 2px solid black;
-
-}
-
-#heute {
+    background-color: #2f688d;
+    color:  rgb(192, 147, 63);
     font-weight: bold;
+
 }
 
 
-#Kalenderblatt table,
-td {
-    background: slategrey;
+#Kalenderblatt table, td {
+    background: rgb(124, 123, 121);
     text-align: center;
     padding: 1cap;
     border-top: 2px solid black;
@@ -73,28 +59,48 @@ td {
     cursor: pointer;
     border-right: 2px solid black;
     border-bottom: 2px solid black;
+    color: rgb(10, 10, 10);
+    border-radius: 30px;
+    overflow: hidden;
+    font-family: "Segoe UI", sans-serif;
+    font-weight: 600;
+    font-size: 1,9rem;
+
+}
+
+
+#heute {
+    font-weight: bold;
 }
 
 
 #Kalenderblatt th.sa {
-    color: blue;
+    color: darkblue;
 }
 
 #Kalenderblatt td.sa {
-    color: blue;
+    color: darkblue;
 
 }
 
 #Kalenderblatt th.so {
-    color: red;
+    color: darkred;
 }
 
 #Kalenderblatt td.so {
-    color: red;
+    color: darkred;
 }
 
 td:nth-child(1) {
-    background-color: rgb(45, 141, 141);
-    color: burlywood;
-
+    background-color: #2f688d;
+    background-color: ;
+    color: rgb(192, 147, 63);
 }
+
+#text_box {
+    max-width: 60%;
+    grid-area: text_box;
+    align-items: start; 
+}    
+
+
