@@ -9,37 +9,36 @@ body {
 
 .header {
 
-    Display: flex;
+    display: flex;
     justify-content: center;
 
 }
 
+
 .container {
     display: grid;
+    grid-template-columns: 1fr 3fr;
     grid-template-areas:
         "header header"
-        "kalenderblatt text_box";
-    grid-template-columns: 1fr 3fr;
-    gap: 60px;
-    padding: 1px;
+        "kalende text_box";
+    box-sizing: border-box;
+    gap: 30px;
+    padding: 30px;
 }
 
-.container>div.header {
+
+.header {
     grid-area: header;
-    text-align: center;
+    padding: 5px 0 30px 0;
 }
 
-.container>div.kalenderblatt {
-    grid-area: kalenderblatt;
+#kalenderblatt {
+    grid-area: kalender;
 }
 
-.container>div.text_box {
+#text_box {
+    max-width: 60%;
     grid-area: text_box;
-}
-
-#Kalenderblatt {
-    margin: 30px auto;
-    background-color: rgb(81, 81, 150);
 }
 
 #Kalenderblatt table {
@@ -60,16 +59,12 @@ body {
 }
 
 #heute {
-    background-color: rgb(255, 255, 0);
-    color: black;
     font-weight: bold;
-    border: 2px solid black;
-    border-radius: 5px;
-    padding: 1cap;
 }
 
 
-#Kalenderblatt table td {
+#Kalenderblatt table,
+td {
     background: slategrey;
     text-align: center;
     padding: 1cap;
