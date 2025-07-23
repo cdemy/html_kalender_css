@@ -32,7 +32,7 @@ body {
 }
 
 #Kalenderblatt {
-    grid-area: kalenderblatt
+    grid-area: kalenderblatt;
 }
 
 #Kalenderblatt table {
@@ -42,6 +42,7 @@ body {
 
 }
 
+
 #Kalenderblatt td:hover {
     background-color: rgb(65, 62, 62);
 }
@@ -50,7 +51,7 @@ body {
 
     border: 2px solid rgb(177, 146, 146);
     background-color: #4b5e6b;
-    color: rgb(192, 147, 63);
+    color: rgb(161, 161, 126);
     font-weight: bold;
 }
 
@@ -60,9 +61,8 @@ body {
 }
 
 #th_monat {
-    height: 50px;
+    height: 80px;
     font-size: 1.8rem;
-    color: black;
 }
 
 
@@ -85,38 +85,44 @@ td {
 
 #heute {
     font-weight: bold;
-    background-color: rgb(100, 151, 100);
+    background-color: rgb(197, 186, 120);
 }
 
 
 #Kalenderblatt th.sa {
-    color: darkblue;
+    color: rgb(9, 9, 167);
 }
 
 #Kalenderblatt td.sa {
-    color: darkblue;
+    color: rgb(9, 9, 167);
 
 }
 
 #Kalenderblatt th.so {
-    color: darkred;
+    color: rgb(167, 5, 5);
 }
 
 #Kalenderblatt td.so {
-    color: darkred;
+    color: rgb(167, 5, 5);
 }
 
 td:nth-child(1) {
     background-color: #4b5e6b;
-    color: rgb(192, 147, 63);
+    color: rgb(161, 161, 126);
 }
 
 #text_box {
-    /* max-width: 50%; */
+
     grid-area: text_box;
 
 }
 
 h4 {
-    margin-top: 8rem;
+    margin-top: 10rem;
 }
+
+* {}
+
+border: red solid 1px;
+margin: 0;
+...........Flexbox zu markieren um zu bearbeiten
