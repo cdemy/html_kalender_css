@@ -12,28 +12,32 @@ body {
     justify-self: center;
     grid-area: header;
     padding: 5px 0 30px 0;
+    font-size: 1.4rem;
 
 }
 
 
 
-
 .container {
     display: grid;
-    grid-template-columns: 1fr 3fr;
+    grid-template-columns: 1f 1fr 1fr 1fr;
+    justify-items: center;
     grid-template-areas:
         "header header"
-        "kalende text_box";
+        "kalenderblatt text_box";
     box-sizing: border-box;
     gap: 30px;
     padding: 30px;
     background-color: rgb(89, 89, 90);
 }
 
+#Kalenderblatt {
+    grid-area: kalenderblatt
+}
+
 #Kalenderblatt table {
     border-spacing: 0px;
     border-collapse: collapse;
-    border: 0px solid black;
     font-size: 18px;
 
 }
@@ -44,10 +48,8 @@ body {
 
 #Kalenderblatt table th {
 
-    border-top: 2px solid black;
-    border-left: 2px solid black;
-    border-right: 2px solid black;
-    background-color: #2f688d;
+    border: 2px solid rgb(177, 146, 146);
+    background-color: #4b5e6b;
     color: rgb(192, 147, 63);
     font-weight: bold;
 }
@@ -59,7 +61,8 @@ body {
 
 #th_monat {
     height: 50px;
-    font-size: 1.7rem;
+    font-size: 1.8rem;
+    color: black;
 }
 
 
@@ -68,23 +71,21 @@ td {
     background: rgb(124, 123, 121);
     text-align: center;
     padding: 1cap;
-    border-top: 2px solid black;
-    border-left: 2px solid black;
+    border: 2px solid rgb(177, 146, 146);
     cursor: pointer;
-    border-right: 2px solid black;
-    border-bottom: 2px solid black;
     color: rgb(10, 10, 10);
     border-radius: 30px;
     overflow: hidden;
-    font-family: "Segoe UI", sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-weight: 600;
-    font-size: 1, 9rem;
+    font-size: 1.3rem;
 
 }
 
 
 #heute {
     font-weight: bold;
+    background-color: rgb(100, 151, 100);
 }
 
 
@@ -106,14 +107,16 @@ td {
 }
 
 td:nth-child(1) {
-    background-color: #2f688d;
-    background-color: ;
+    background-color: #4b5e6b;
     color: rgb(192, 147, 63);
 }
 
 #text_box {
-    max-width: 60%;
+    /* max-width: 50%; */
     grid-area: text_box;
-    align-items: start;
-    color: ;
+
+}
+
+h4 {
+    margin-top: 8rem;
 }
