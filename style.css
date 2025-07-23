@@ -1,62 +1,40 @@
 body {
 
-    background-color: rgb(41, 40, 40);
+    background-color: rgb(85, 81, 81);
     margin-left: 6cap;
     margin-right: 6cap;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 
-.header {
-    display: grid justify-self: center;
-    grid-area: header;
-    font-size: 1.6rem;
-
-}
-
-
-
 .container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    justify-items: center;
     grid-template-areas:
         "header header"
         "kalenderblatt text_box";
-    box-sizing: border-box;
+    grid-template-columns: 1fr 2fr 1fr;
+    justify-content: center;
     gap: 30px;
     padding: 30px;
-    background-color: rgb(89, 89, 90);
+    
+
 }
+
+
+.header {
+    grid-area: header;
+    font-size: 1.6rem;
+}
+
 
 #Kalenderblatt {
     grid-area: kalenderblatt;
+    
 }
 
 #Kalenderblatt table {
-    border-spacing: 20px;
-    border-collapse: collapse;
-    font-size: 18px;
-
-
-}
-
-
-#Kalenderblatt td:hover {
-    background-color: rgb(65, 62, 62);
-}
-
-#Kalenderblatt table th {
-
-    border: 2px solid rgb(177, 146, 146);
-    background-color: #4b5e6b;
-    color: rgb(161, 161, 126);
-    font-weight: bold;
-}
-
-
-#th_wochentagen {
-    height: 50px;
+    background-color: #a09c9c;
+    background: linear-gradient(to bottom, #aaa7a7, #928e8e);
 }
 
 #th_monat {
@@ -65,26 +43,38 @@ body {
 }
 
 
-#Kalenderblatt table,
-td {
-    background: rgb(124, 123, 121);
-    text-align: center;
-    padding: 1cap;
-    border: 2px solid rgb(177, 146, 146);
-    cursor: pointer;
-    color: rgb(10, 10, 10);
-    border-radius: 30px;
-    overflow: hidden;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 600;
-    font-size: 1.3rem;
+#Kalenderblatt table th{
+   
+    border: 2px solid rgb(87, 85, 85);
+    border-collapse: separate;
+    background-color: #4f4f50;
+
 
 }
 
 
+
+#Kalenderblatt table td {
+
+    text-align: center;
+    padding: 14px;
+    cursor: pointer;
+    color: rgb(10, 10, 10);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight:bold;
+    font-size: 20px;
+    border: 1px solid rgb(48, 47, 41);
+ 
+
+}
+
+
+#Kalenderblatt td:hover {
+    background-color: rgb(51, 29, 29);
+}
+
 #heute {
-    font-weight: bold;
-    background-color: rgb(197, 186, 120);
+    background-color: rgb(145, 132, 97);
 }
 
 
@@ -106,16 +96,21 @@ td {
 }
 
 td:nth-child(1) {
-    background-color: #4b5e6b;
-    color: rgb(161, 161, 126);
+    background-color: #4f4f50;
+
 }
 
 #text_box {
 
     grid-area: text_box;
-
+    
 }
 
 h4 {
-    margin-top: 4rem;
+    margin-top: 8rem;
+}
+
+#wochentag {
+    
+    height: 40px;
 }
