@@ -1,5 +1,8 @@
 body {
-    background-color: rgb(66, 45, 45);
+    background-color: rgb(87, 77, 77);
+    background-image: url("dreamstime_xl_47945104.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
 
  }
 
@@ -8,7 +11,7 @@ body {
     grid-template-areas:
         "header header"
         "kalenderblatt text_box";
-    grid-template-columns: 1fr,1fr;
+    grid-template-columns: 1fr, 1fr;
     justify-content: center;
     gap: 30px;
     padding: 30px;
@@ -28,8 +31,9 @@ body {
     color: black;
     font-weight: bold;
      
-    hover {
+    &:hover {
         background-color: rgb(124, 119, 119);
+        border-radius: 30px;
     } 
 
 }
@@ -39,32 +43,35 @@ body {
     grid-area: kalenderblatt
     display: grid;
     padding: 20px;
+    
 
 
 table, th, td {
-    border: 1px solid black;
-    border-collapse: collapse;
+    
+ 
     padding: 20px;
     text-align: center;
     font-size: 25px;
     cursor: pointer;
     font-family: Arial, sans-serif;
+    border-radius: 20px;
+    
 }
 
 #month {
     padding: 20px;
-    font-size: 3cap;
+    font-size: 2cap;
      
 
 }
   
 td:hover {
-    background-color:  #856a6a;
+    background-color:  #6b5b5b;
 
 }
 
 th {
-    background-color:   #856a6a;
+    background-color:   #6b5b5b;
     font-size: 30px;
 }
 
@@ -75,7 +82,7 @@ td {
 }
 
 td:nth-child(1) {
-    background-color: #856a6a;
+    background-color: #6b5b5b;
     font-weight: bold;
     font-size: 25px;
 }
@@ -92,6 +99,7 @@ color: darkblue;
 }    
 
 td:nth-child(7){
+
     color: darkblue;
 }
 
@@ -101,18 +109,21 @@ td:nth-child(8){
 
 
 #today {
-    background-color: rgb(160, 133, 59);
+    background-color: rgb(100, 84, 41);
 }
 
 
 #text_box {
-    grid-area: text_box;
+    grid-area: text_box;  
+    background-color: rgb(124, 119, 119);
 
-    
 }
 
-h4 {
-    margin-bottom: 10rem;
+text_box: h4 {
+   
+margin-bottom: 10rem;    
+
 }
+
 
 
