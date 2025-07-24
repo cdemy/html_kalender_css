@@ -1,11 +1,5 @@
 body {
-    
-
-    
-    background-size: cover;
-    background-repeat: repeat;
-    background-position: 0 0;
-    animation: 3s ease-in 1s infinite reverse both running slide-in;
+    background-color: rgb(66, 45, 45);
 
  }
 
@@ -52,13 +46,15 @@ table, th, td {
     border-collapse: collapse;
     padding: 20px;
     text-align: center;
-    font-size: 18px;
+    font-size: 25px;
     cursor: pointer;
     font-family: Arial, sans-serif;
 }
 
 #month {
     padding: 20px;
+    font-size: 3cap;
+     
 
 }
   
@@ -81,7 +77,7 @@ td {
 td:nth-child(1) {
     background-color: #856a6a;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 25px;
 }
 
 
@@ -116,12 +112,7 @@ td:nth-child(8){
 }
 
 h4 {
-    margin-top: 10rem;
+    margin-bottom: 10rem;
 }
 
-
-*{
-    border: red solid 1px;
-}
-    
 
