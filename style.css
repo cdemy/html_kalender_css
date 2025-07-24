@@ -92,6 +92,25 @@ td:nth-child(1) {
 }
 
 
+
+#samstag, SA {
+color: darkblue;
+
+}
+
+#sonntag, SO {
+    color: darkred;
+}    
+
+td:nth-child(7){
+    color: darkblue;
+}
+
+td:nth-child(8){
+    color: darkred;
+}
+
+
 #today {
     background-color: rgb(160, 133, 59);
 }
