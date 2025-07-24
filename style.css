@@ -48,7 +48,7 @@ body {
 
 #Kalenderblatt table th {
 
-    border: 2px solid rgb(177, 146, 146);
+    border: 2px solid rgb(160, 153, 153);
     background-color: #4b5e6b;
     color: rgb(161, 161, 126);
     font-weight: bold;
@@ -61,7 +61,7 @@ body {
 
 #th_monat {
     height: 80px;
-    font-size: 1.8rem;
+    font-size: 2cap;
 }
 
 
@@ -70,7 +70,7 @@ td {
     background: rgb(124, 123, 121);
     text-align: center;
     padding: 1cap;
-    border: 2px solid rgb(177, 146, 146);
+    border: 2px solid rgb(160, 153, 153);
     cursor: pointer;
     color: rgb(10, 10, 10);
     border-radius: 30px;
