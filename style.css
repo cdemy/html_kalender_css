@@ -10,16 +10,13 @@ body {
     grid-template-areas:
         "header header"
         "kalenderblatt text_box";
-    grid-template-columns: 1fr, 1fr;
+    grid-template-columns: 1fr 1fr;
     justify-content: center;
     gap: 30px;
     padding: 30px;
     background-color: #181616;
     font-family: Arial, sans-serif;
     margin: 40px;
-
-           
-    
     
 }
 
@@ -35,9 +32,7 @@ body {
      
     &:hover {
         background-color: rgb(124, 119, 119);
-    }
-
-    
+    } 
 
 }
 
@@ -48,16 +43,6 @@ body {
     padding: 20px;
     
 
-  
-}
-#month {
-    font-size: 3rem;
-    color: black;
-    padding: 10px;
-
-
-}  
-
 table, th, td {
     border: 1px solid black;
     border-collapse: collapse;
@@ -66,8 +51,18 @@ table, th, td {
     font-size: 18px;
     cursor: pointer;
     font-family: Arial, sans-serif;
+
    
 }
+
+  
+}
+#month {
+    font-size: 3rem;
+    color: black;
+    padding: 10px;
+
+}  
 
 
 td:hover {
@@ -92,6 +87,25 @@ td:nth-child(1) {
 }
 
 
+
+#samstag, SA {
+color: darkblue;
+
+}
+
+#sonntag, SO {
+    color: darkred;
+}    
+
+td:nth-child(7){
+    color: darkblue;
+}
+
+td:nth-child(8){
+    color: darkred;
+}
+
+
 #today {
     background-color: rgb(160, 133, 59);
 }
@@ -100,7 +114,6 @@ td:nth-child(1) {
 #text_box {
     grid-area: text_box;
     background-color: rgb(124, 119, 119);
-    
     
 }
 
@@ -112,5 +125,6 @@ h4 {
 
 *{
     border: red solid 1px;
+
 }
 
