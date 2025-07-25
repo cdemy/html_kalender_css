@@ -32,7 +32,7 @@ body{
     grid-area: header;
     padding: 5px 0 30px 0;
     font-size: 1.2rem;
-    font-size: 2cap;
+    font-size: 3cap;
     border-radius: 3rem;
 
 
@@ -50,6 +50,7 @@ body{
 
 #kalenderblatt {
     grid-area: kalenderblatt;
+    border-collapse: collapse;
 
     
 
