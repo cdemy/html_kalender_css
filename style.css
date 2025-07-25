@@ -2,7 +2,7 @@ body {
 
     margin-right: 30px;
     margin-left: 30px;
-    background-image: url('IT.jpg');
+    background-image: url('IT.jpg')
     background-size: cover;
    
 }
@@ -16,6 +16,7 @@ body {
         "kalenderblatt text_box";
     grid-template-columns: 1fr, 1fr;
     justify-content: center;
+    text-align: center;
     gap: 30px;
     padding: 30px;
     font-family: Arial, Helvetica, sans-serif;
@@ -24,109 +25,106 @@ body {
 
 
 .header {
-    
-
     grid-area: header;
-    padding: 5px 0 30px 0;
-    font-size: 1.2rem;
-    border-radius: 20px;
-
+    font-size: 3cap;
+    background-color: rgb(124, 123, 121);
+    border-radius: 2cap;
+ 
+}
 
     &:hover {
   background-color: rgb(124, 123, 121);
   }
-
-}
-
-
-
-
 
 
 
 #kalenderblatt {
     grid-area: kalenderblatt;
 
+    
+
+}
+
+#kalenderblatt, th {
+    
+    padding: 1.5cap;
+    font-weight: bold;
 }
 
 
 
-
-
-
-#Kalenderblatt td:hover {
+#kalenderblatt, td:hover {
     background-color: rgb(65, 62, 62);
 }
 
 
+#kalenderblatt, td {
+    
+
+  }
+
+
+.sa, SA {
+    background-color: blue;
+}
+
+
+
+
+
+
+
+
 
 #th_monat {
-    height: 80px;
-    font-size: 1.8rem;
+    height: 60px;
+    font-size: 1.9cap;
     background-color: #6b5b5b;
 
+
 }
 
 
-#Kalenderblatt table,
-td {
-    background: rgb(124, 123, 121);
-    text-align: center;
-    padding: 1cap;
-    border: 2px solid rgb(177, 146, 146);
-    border-radius: 20px;
+#kalenderblatt, td {
+    background-color:  rgb(124, 123, 121);
+    font-size: 1.8cap;
+    font-size: 20px;
+    width: 5cap;
+    height: 80px;
     cursor: pointer;
-    font-size: 1.5rem;
 
 }
 
+.kw, KW { 
+    color: black;
+    background-color:#6b5b5b;      vie besser
+}
 
 
-
-
-td:nth-child(1) {
+----------------td:nth-child(1) {
     background-color: #6b5b5b;
     font-weight: bold;
-    font-size: 25px;
+    font-size: 20px;
 }
 
 
-#samstag, SA {
-color: darkblue;
-
-}
-
-
-#sonntag, SO {
-    color: darkred;
-}    
-
-
-
-td:nth-child(7){
-
-    color: darkblue;
-}
-
-
-td:nth-child(8){
-    color: darkred;
-}
-
-
-#today {
+#heute {
     background-color: rgb(7, 92, 7);
 }
 
 
 #text_box {
     grid-area: text_box;
-    color:  #e4dcdc;
-    font-size: 1rem;
-    
+    text-align: left;
+    font-size: 1rem;  
 }
 
 h4 {
     margin-top: 10rem;
 
+  }
+
+
+  *{
+    border: red 1px solid;
   }
