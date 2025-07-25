@@ -1,6 +1,7 @@
 body {
-  
-
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0,0,0,0.5)), 
+                    url('IT.jpg');
+    background-size: cover;
 }
 
 
@@ -25,15 +26,15 @@ body {
     text-align: center;
     box-sizing: border-box;
     padding: 20px;
-    color: black;
+    color:  #6b5b5b;
     font-weight: bold;
-}
-     
+
     &:hover {
         background-color: rgb(124, 119, 119);
         border-radius: 30px;
     } 
 
+}
 
 #kalenderblatt {
     grid-area: kalenderblatt
@@ -110,17 +111,18 @@ td:nth-child(8){
 
 
 #today {
-    background-color: rgb(18, 18, 177);
+    background-color: rgb(7, 92, 7);
 }
 
 
 #text_box {
     grid-area: text_box;
-    color:#8d6f6f
-
-
+    color:  #e4dcdc;
+    font-size: 1rem;
+    
 }
 
 h4 {
     margin-top: 10rem;
 }
+
