@@ -4,8 +4,8 @@ body{
     margin-left: 30px;
     background-image: url('IT.jfif');
     background-size: cover;
-   
 }
+
 
 .container{
     display: grid;
@@ -18,7 +18,6 @@ body{
     padding: 30px;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
-    
 }
 
 
@@ -39,7 +38,6 @@ body{
 #kalenderblatt{
     grid-area: kalenderblatt;
     border-collapse: collapse;
-
 }
 
 
@@ -48,7 +46,6 @@ body{
     font-size: 3rem;
     background-color: #6b5b5b;
     color: black;
-
 }
 
 
@@ -56,11 +53,10 @@ table,th,td{
     width: 600px;
     table-layout: fixed;
     border-radius: 1cap;
-   
 }
 
-th{
 
+th{
     background-color:  #6b5b5b;
     height: 4cap;
     font-size: 25px;
@@ -72,33 +68,7 @@ td{
     font-size: 25px;
     height: 4cap;
     cursor: pointer;
-
 }
-
-
-td:hover{
-    background-color: #6b5b5b;
-}
-
-
-
-td:nth-child(1){
-    background-color: #6b5b5b;
-    font-weight: bold;
-    font-size: 25px;
-}
-
-
-#samstag, SA{
-color: darkblue;
-
-}
-
-
-#sonntag, SO {
-    color: darkred;
-}    
-
 
 
 td:nth-child(7){
@@ -112,9 +82,30 @@ td:nth-child(8){
 }
 
 
+td:hover{
+    background-color: #6b5b5b;
+}
+
+
+td:nth-child(1){
+    background-color: #6b5b5b;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+
 #today {
     background-color: rgb(12, 99, 12);
 }
+
+
+#samstag, SA{
+color: darkblue;
+}
+
+#sonntag, SO {
+    color: darkred;
+}    
 
 
 #text_box {
@@ -127,5 +118,4 @@ td:nth-child(8){
 
 h4 {
     margin-top: 10rem;
-
 }
