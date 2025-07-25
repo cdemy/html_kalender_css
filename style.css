@@ -1,6 +1,6 @@
 body {
 
-    background-color: rgb(119, 115, 115);
+    background-color: rgb(41, 40, 40);
     margin-left: 6cap;
     margin-right: 6cap;
     font-family: Arial, Helvetica, sans-serif;
@@ -17,16 +17,19 @@ body {
 }
 
 
+
 .container {
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-columns: 1f 1fr 1fr 1fr;
     justify-items: center;
     grid-template-areas:
         "header header"
         "kalenderblatt text_box";
-    box-sizing: border-box;
+    grid-template-columns: 1fr, 1fr;
+    justify-content: center;
     gap: 30px;
     padding: 30px;
+    background-color: rgb(89, 89, 90);
 }
 
 #Kalenderblatt {
@@ -34,7 +37,7 @@ body {
 }
 
 #Kalenderblatt table {
-    border-spacing: 2cap;
+    border-spacing: 0px;
     border-collapse: collapse;
     font-size: 18px;
 
@@ -47,7 +50,7 @@ body {
 
 #Kalenderblatt table th {
 
-    border: 2px solid rgb(160, 153, 153);
+    border: 2px solid rgb(177, 146, 146);
     background-color: #4b5e6b;
     color: rgb(161, 161, 126);
     font-weight: bold;
@@ -60,7 +63,7 @@ body {
 
 #th_monat {
     height: 80px;
-    font-size: 2cap;
+    font-size: 1.8rem;
 }
 
 
@@ -69,52 +72,66 @@ td {
     background: rgb(124, 123, 121);
     text-align: center;
     padding: 1cap;
-    border: 2px solid rgb(160, 153, 153);
+    border: 2px solid rgb(177, 146, 146);
     cursor: pointer;
     color: rgb(10, 10, 10);
     border-radius: 30px;
     overflow: hidden;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 600;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
 
 }
 
-
-#heute {
-    font-weight: bold;
-    background-color: rgb(197, 186, 120);
-}
-
-
-#Kalenderblatt th.sa {
-    color: rgb(9, 9, 167);
-}
-
-#Kalenderblatt td.sa {
-    color: rgb(9, 9, 167);
-
-}
-
-#Kalenderblatt th.so {
-    color: rgb(167, 5, 5);
-}
-
-#Kalenderblatt td.so {
-    color: rgb(167, 5, 5);
-}
 
 td:nth-child(1) {
-    background-color: #4b5e6b;
-    color: rgb(161, 161, 126);
+    background-color: #6b5b5b;
+    font-weight: bold;
+    font-size: 25px;
 }
 
+
+#samstag, SA {
+color: darkblue;
+
+}
+
+
+#sonntag, SO {
+    color: darkred;
+}    
+
+
+
+td:nth-child(7){
+
+    color: darkblue;
+}
+
+
+td:nth-child(8){
+    color: darkred;
+}
+
+
+#today {
+    background-color: rgb(7, 92, 7);
+}
+
+
 #text_box {
-
     grid-area: text_box;
-
+    color:  #e4dcdc;
+    font-size: 1rem;
+    
 }
 
 h4 {
     margin-top: 10rem;
 }
+
+* {}
+
+border: red solid 1px;
+margin: 0;
+...........Flexbox zu markieren um zu bearbeiten
